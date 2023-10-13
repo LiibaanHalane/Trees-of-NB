@@ -59,8 +59,8 @@ article p {
 }
 
 header {
-    background-color: cadetblue;
-    border: 3px solid darkblue;
+    background-color: darkblue;
+    color: white;
     display: flex;
     margin-bottom: 3%;
     align-items: center;
@@ -69,6 +69,12 @@ header {
 
 header img {
     max-height: 50px;
+}
+
+header p,a {
+    color: white;
+    margin-left: auto;
+
 }
 
 body {
