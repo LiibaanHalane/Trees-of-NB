@@ -27,6 +27,7 @@ article p {
    margin-right: 0;
    margin-top: 3%;
     margin-bottom: 3%;
+}
 
 /* .catogory-image {
     max-width: 30%;
@@ -72,10 +73,10 @@ header img {
 
 body {
     background-color: cadetblue;
-    border: 3px solid darkblue;
     box-sizing: border-box;
     margin: 0%;
-    margin-bottom: 3%;
+    /* margin-bottom: 3%; */
+}
 
 footer {
     position: fixed;
@@ -84,18 +85,4 @@ footer {
     bottom: 0;
     width: 100%;
     height: 60px;  
-}
-
-.spanLeft {
-    float: left;
-    margin-left: 25%;
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.spanRight {
-    float: right;
-    margin-right: 25%;
-    font-weight: bolder;
-    font-size: 25px;
 }
