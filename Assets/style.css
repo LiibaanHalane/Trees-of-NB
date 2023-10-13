@@ -2,11 +2,31 @@
 
 /* Set image size to 30% */
 .home-card img {
-    max-width: 30%;
-    height: auto;
-    margin: 5%;
+    max-height: 200px;    
+    margin: 3%;
     border: 5px solid darkblue;
+    float:left;
 }
+
+.home-card {
+    display: flex;
+    background-color: cadetblue;
+    border: 3px solid darkblue;
+    box-sizing: border-box;
+}
+
+article p {
+    font-size: 1em; 
+}
+
+.divider {
+    border: 5px solid darkblue;
+    width: 1000px;
+   float: right;
+   margin-left: auto;
+   margin-right: 0;
+   margin-top: 3%;
+    margin-bottom: 3%;
 
 /* .catogory-image {
     max-width: 30%;
@@ -34,19 +54,28 @@
     background-color: gray;
     border: 5px solid darkblue;
     margin: 5%;
+
 }
 
-/* Use flexbox for category cards */
-.home-card {
+header {
+    background-color: cadetblue;
+    border: 3px solid darkblue;
     display: flex;
-    background-color: aquamarine;
+    margin-bottom: 3%;
+    align-items: center;
     border: darkblue;
 }
 
-article > p {
-    font-size: 1.5em;
-    float: bottom;
+header img {
+    max-height: 50px;
 }
+
+body {
+    background-color: cadetblue;
+    border: 3px solid darkblue;
+    box-sizing: border-box;
+    margin: 0%;
+    margin-bottom: 3%;
 
 footer {
     position: fixed;
@@ -69,8 +98,4 @@ footer {
     margin-right: 25%;
     font-weight: bolder;
     font-size: 25px;
-}
-
-body {
-    margin: 0%;
 }
