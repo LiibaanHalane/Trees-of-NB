@@ -1,15 +1,29 @@
 /* FILEPATH: c:\Users\Liibaan\Desktop\NBCC\Web Dev\Trees-of-NB\Assets\style.css */
 
 /* Set image size to 30% */
-img {
+.home-card img {
     max-width: 30%;
     height: auto;
     margin: 5%;
     border: 5px solid darkblue;
 }
 
+/* .catogory-image {
+    max-width: 30%;
+    height: auto;
+    margin: 5%;
+    border: 5px solid darkblue;
+}
+
+.item-image {
+    max-width: 30%;
+    height: auto;
+    margin: 5%;
+    border: 5px solid darkblue;
+} */
+
 /* Use flexbox for category cards */
-.category-card {
+.home-card {
     display: flex;
     align-items: center;
 }
