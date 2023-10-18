@@ -29,7 +29,7 @@ article p {
     margin-bottom: 3%;
 }
 
-/* .catogory-image {
+/* .category-image {
     max-width: 30%;
     height: auto;
     margin: 5%;
@@ -39,50 +39,156 @@ article p {
 .item-image {
     max-width: 30%;
     margin: 5%;
-    border: 5px solid darkblue;
+    border: 4px solid black;
 }
 
 .item-container {
     max-height: 500px;
     display: flex;
-    background-color: aquamarine;
-    border: darkblue;
 }
 
+/* Formatting for all content on ecosystem pages*/
 
-.item-list {
+.eco-list {
     width: 90%;
-    background-color: gray;
-    border: 5px solid darkblue;
+    background-color: bisque;
+    border: 4px solid black;
     margin: 5%;
-
 }
 
+.eco {
+    background-color: burlywood;
+    box-sizing: border-box;
+    margin: 0%;
+    margin-bottom: 3%;
+}
+
+/* Formatting for all content on disease pages*/
+
+.disease-list {
+    width: 90%;
+    background-color: thistle;
+    border: 4px solid black;
+    margin: 5%;
+}
+
+.disease {
+    background-color: rgb(223, 156, 223);
+    box-sizing: border-box;
+    margin: 0%;
+    margin-bottom: 3%;
+}
+
+/* Formatting for all content on tree pages*/
+
+.tree-list {
+    width: 90%;
+    background-color: khaki;
+    border: 4px solid black;
+    margin: 5%;
+}
+
+.tree {
+    background-color:rgb(176, 176, 82);
+    box-sizing: border-box;
+    margin: 0%;
+    margin-bottom: 3%;
+}
+
+/*Header styling*/
 header {
-    background-color: cadetblue;
-    border: 3px solid darkblue;
+    background-color: #04AA6D;
     display: flex;
     margin-bottom: 3%;
     align-items: center;
-    border: darkblue;
 }
 
 header img {
     max-height: 50px;
 }
 
+/*Body*/
 body {
-    background-color: cadetblue;
     box-sizing: border-box;
     margin: 0%;
-    /* margin-bottom: 3%; */
+    margin-bottom: 3%;
 }
 
+article item {
+    font-size: larger;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+/* Here down is the footer styling */
 footer {
     position: fixed;
-    background-color: red;
+    background-color: #04AA6D;
     margin: 0%;
     bottom: 0;
     width: 100%;
-    height: 60px;  
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropbtn {
+    cursor: pointer;
+    height: 50px;
+    background-color: rgb(12, 132, 12);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    min-width: 225px;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 225px;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content :nth-last-child(1) {
+    background-color: rgb(209, 216, 223);
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.dropdown:hover .dropdown-content.diseasesdrop{
+    display: block;
+    top: -340%;
+}
+.dropdown:hover .dropdown-content.ecosystemdrop{
+    display: block;
+    top: -595%;
+}
+.dropdown:hover .dropdown-content.treesdropatoi{
+    display: block;
+    top: -595%;
+}
+.dropdown:hover .dropdown-content.treesdropjtor{
+    display: block;
+    top: -680%;
+}
+.dropdown:hover .dropdown-content.treesdropstoz{
+    display: block;
+    top: -510%;
 }
