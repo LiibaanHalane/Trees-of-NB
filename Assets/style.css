@@ -172,22 +172,22 @@ footer {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
-/*Formula for top is 85% times number of boxes,minus one. Then make negative.*/
+/*Formula for top is 85% times number of boxes,minus 2. Then make negative.*/
 .dropdown:hover .dropdown-content.diseasesdrop{
     display: block;
-    top: -339%;
+    top: -338%;
 }
 .dropdown:hover .dropdown-content.ecosystemdrop{
     display: block;
-    top: -509%;
+    top: -508%;
 }
 .dropdown:hover .dropdown-content.treesdropatoi{
     display: block;
-    top: -509%;
+    top: -508%;
 }
 .dropdown:hover .dropdown-content.treesdropjtor{
     display: block;
-    top: -594%;
+    top: -593%;
 }
 .dropdown:hover .dropdown-content.treesdropstoz{
     display: block;
