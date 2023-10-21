@@ -98,8 +98,8 @@ article p {
 /*Header styling*/
 header {
     display: flex;
-    margin-bottom: 3%;
     align-items: center;
+    background-color: darkblue;
 }
 
 header img {
@@ -115,6 +115,10 @@ header p {
 header a {
     color: white;
     margin-left: auto;
+}
+
+header h2{
+    margin-left: 20%;
 }
 
 body {
@@ -202,3 +206,116 @@ footer {
     display: block;
     top: -509%;
 }
+
+/* Carosel css, this was a doosy without js*/
+
+  /* Parent container for the carousel */
+  .carousel {
+    position: relative; /* To position child elements absolutely within it */
+    width: 35%; /* Width of the carousel */
+    height: 600px; /* Height of the carousel */
+    overflow: hidden; /* To hide slides outside the carousel viewport */
+    background-color: black;
+    margin-bottom: 5%;
+  }
+  /* leave room for text */
+  .carousel img {
+    width: 100%;
+    max-height: 50%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  /* Hide the radio buttons as they are used for functionality not display */
+  .carousel input[type="radio"] {
+    display: none;
+  }
+
+  /* The container holding all the slides, making them sit next to each other in a row */
+  .carousel .slides {
+    display: flex; /* Use flexbox to align slides horizontally */
+    transition: transform 0.3s ease; /* Smooth transition effect when changing slides */
+  }
+
+  .carousel p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+
+  /* Individual slide styling */
+  .carousel .slide {
+    flex: 0 0 100%; /* Make each slide take full width of the carousel */
+  }
+
+  /* Move the slides based on which radio button is checked */
+  /* If slide1 radio button is checked, don't move slides */
+  #slide1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+
+  /* If slide2 radio button is checked, move slides to the left by 100% of carousel width (to show second slide) */
+  #slide2:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+
+  /* If slide3 radio button is checked, move slides to the left by 200% of carousel width (to show third slide) */
+  #slide3:checked ~ .slides {
+    transform: translateX(-200%);
+  }
+
+  /* etc. */
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+  }
+  
+  #slide5:checked ~ .slides {
+    transform: translateX(-400%);
+  }
+  
+  #slide6:checked ~ .slides {
+    transform: translateX(-500%);
+  }
+
+  /* Styling for navigation controls (dots) container */
+  .carousel .controls {
+    position: absolute; /* Absolutely position the controls within the carousel container */
+    bottom: 10px; /* Place it 10px above the bottom of the carousel */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Perfectly center it */
+    display: flex; /* Use flexbox to place control dots horizontally */
+    gap: 10px; /* Maintain a gap of 10px between control dots */
+  }
+
+  /* Individual control dot styling */
+  .carousel .controls label {
+    display: block;
+    width: 10px; /* Width of control dot */
+    height: 10px; /* Height of control dot */
+    background-color: #ccc; /* Default color of control dot */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+  /* Highlight the control dot corresponding to the currently visible slide */
+  #slide1:checked ~ .controls label:nth-child(1),
+  #slide2:checked ~ .controls label:nth-child(2),
+  #slide3:checked ~ .controls label:nth-child(3),
+  #slide4:checked ~ .controls label:nth-child(4),
+  #slide5:checked ~ .controls label:nth-child(5),
+  #slide6:checked ~ .controls label:nth-child(6) {
+    background-color: #333; /* Active slide's dot color */
+}
+
+  #cat {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+  }
+
+  .slide h2 {
+    text-align: center;
+  }

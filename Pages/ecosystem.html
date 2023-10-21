@@ -6,22 +6,173 @@
     <title>Ecosystems</title>
     <link rel="stylesheet" href="../Assets/style.css" />
   </head>
-  <body>
+  <body class="eco">
     <header class="header">
       <img
         src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
         alt="Our Logo"
       />
       <h1>New Brunswick's Forests</h1>
+      <h2>Ecosystems</h2>
       <a href="ecosystem.html">Tell us how we did!</a>
       <p>
         Created by:<br />
         <span>Banni and</span> <br /><span>Booker!</span>
       </p>
     </header>
+    <main id="cat">
+      <div class="carousel">
+        <!-- Radio buttons for controlling the slides -->
+        <input type="radio" id="slide1" name="slides" checked />
+        <input type="radio" id="slide2" name="slides" />
+        <input type="radio" id="slide3" name="slides" />
+        <input type="radio" id="slide4" name="slides" />
+        <input type="radio" id="slide5" name="slides" />
+        <input type="radio" id="slide6" name="slides" />
+        <!-- Slides -->
+        <div class="slides">
+          <div class="slide">
+            <label for="slide1"
+              ><a href="./ecosyetems/coastalBog"><img src="../Assets/coastalBog.jpg" alt="Slide 1" /></a>
+              <h2>Coastal Bog</h2>
+              <p>
+                The region features a unique type of raised bog, a maritime
+                climate, and the world's highest tides.
+              </p></label
+            >
+          </div>
+          <div class="slide">
+            <label for="slide2"
+              ><a href="./ecosystems/beaverWetlands"><img src="../Assets/beaverWetlands.jpg" alt="Slide 2" /></a>
+              <h2>Beaver Wetlands</h2>
+              <p>
+                Beaver wetlands have a lot of stored water, so plants in them
+                don't really feel droughts, they stay green and lush.
+              </p></label
+            >
+          </div>
+          <div class="slide">
+            <label for="slide3"
+              ><img src="../Assets/beaverMactaquac.JPG" alt="Slide 3" />
+              <h2>Beaver Wetlands</h2>
+              <p>
+                his study used the case of the Mactaquac Dam, New Brunswick,
+                Canada, to illustrate the range of ecosystem services in a dammed
+                river
+              </p></label
+            >
+          </div>
+                <!-- Slide for Boreal Forest -->
+      <div class="slide">
+        <label for="slide3">
+          <a href="./ecosystems/borealForest"><img src="../Assets/borealForest.jpg" alt="Slide 3" /></a>
+          <h2>Boreal Forest</h2>
+          <p>
+            [Description for Boreal Forest]
+          </p>
+        </label>
+      </div>
+
+      <!-- Slide for Acadian Forest -->
+      <div class="slide">
+        <label for="slide4">
+          <a href="./ecosystems/acadianForest"><img src="../Assets/acadianForest.jfif" alt="Slide 4" /></a>
+          <h2>Acadian Forest</h2>
+          <p>
+            [Description for Acadian Forest]
+          </p>
+        </label>
+      </div>
+
+      <!-- Slide for River Ecosystems -->
+      <div class="slide">
+        <label for="slide5">
+          <a href="./ecosystems/riverEcosystems"><img src="../Assets/riverEcosystem.jfif" alt="Slide 5" /></a>
+          <h2>River Ecosystems</h2>
+          <p>
+            [Description for River Ecosystems]
+          </p>
+        </label>
+      </div>
+        </div>
+        
+      <!-- Navigation controls -->
+      <div class="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
+        <label for="slide6"></label>
+      </div>
+    </main>
 
     <footer>
-      <p>Lorem Ipsum</p>
+      <a href="index.html">
+        <button class="dropbtn">Home</button>
+      </a>
+
+      <div class="dropdown">
+        <div class="dropdown-content diseasesdrop">
+          <a href="">Butternut Canker</a>
+          <a href="">Dutch Elm</a>
+          <a href="">Spruce Budworm</a>
+          <a href="">Main Page</a>
+        </div>
+        <button class="dropbtn">Diseases</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-content ecosystemdrop">
+          <a href="">Boreal Forest</a>
+          <a href="">Acadian Forest</a>
+          <a href="">Coastal Bog</a>
+          <a href="">Coastal Bog</a>
+          <a href="">River Ecosystems</a>
+          <a href="">Beaver Wetlands</a>
+          <a href="">Main Page</a>
+        </div>
+        <button class="dropbtn">Ecosystems</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-content treesdropatoi">
+          <a href="">Balsam Fir</a>
+          <a href="">Black Birch</a>
+          <a href="">Black Spruce</a>
+          <a href="">Bur Oak</a>
+          <a href="">Cedar</a>
+          <a href="">Gray Alder</a>
+          <a href="">Main Page</a>
+        </div>
+        <button class="dropbtn">Trees (A to I)</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-content treesdropjtor">
+          <a href="">Jack Pine</a>
+          <a href="">Mountain Ash</a>
+          <a href="">Paper Birch</a>
+          <a href="">Red Maple</a>
+          <a href="">Red Oak</a>
+          <a href="">Red Pine</a>
+          <a href="">Red Spruce</a>
+          <a href="">Main Page</a>
+        </div>
+        <button class="dropbtn">Trees (J to R)</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-content treesdropstoz">
+          <a href="">Silver Maple</a>
+          <a href="">Tamarak</a>
+          <a href="">White Pine</a>
+          <a href="">White Spruce</a>
+          <a href="">Yellow Birch</a>
+          <a href="">Main Page</a>
+        </div>
+        <button class="dropbtn">Trees (S to Z)</button>
+      </div>
     </footer>
   </body>
 </html>
